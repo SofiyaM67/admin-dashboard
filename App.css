@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  height: 50px;
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  background-color: violet;
+}
+
+#product-name {
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+}
+
+.navbar {
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: blue;
+  margin-right: 20px;
+  margin-left: 5px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.notification-bell {
+  background-color: #f8f9fa;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.date-container {
+  margin-left: 300px;
+}
+
+.date-container span {
+  margin-right: 10px;
+}
+
+.add-filter-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Line Chart styles */
+.RechartsCartesianGrid-horizontal {
+  stroke: #ccc;
+}
+
+.RechartsXAxis-tick {
+  fill: #555;
+}
+
+.RechartsYAxis-tick {
+  fill: #555;
+}
+
+.RechartsLegend-item-text {
+  fill: #555;
+}
+
+.RechartsTooltip-wrapper {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.RechartsTooltip-label {
+  color: #f5f5f5;
+}
+
+.RechartsTooltip-item {
+  color: #f5f5f5;
+}
+
+/* Add this CSS at the end of your existing styles */
+
+/* Cases Timeline Heading */
+.chart-heading {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.chart-heading h2 {
+  font-size: 24px;
+  color: black;
+  margin: 0;
+}
+
+/* Additional styling for emphasis or decoration */
+.chart-heading h2::before,
+.chart-heading h2::after {
+  content: "Cases Timeline";
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  margin: 0 10px;
+}
+
+/* Chart Container */
+.chart-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Three equal columns, adjust as needed */
+  gap: 20px; /* Adjust the gap between items */
+}
+
+/* Individual Chart Items */
+.chart-item,
+.chart-item1,
+.chart-item2,
+.chart-item3 {
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Adjust the width as needed */
+.chart-item {
+  width: 500px;
+}
+
+.chart-item1,
+.chart-item2,
+.chart-item3 {
+  width: 500px;
+}
+
+.map-container {
+  width: 500px; /* Set a fixed width */
+  height: 500px; /* Set a fixed height */
+  padding-top: 300px;
+}
+
+/* Media Query for responsiveness */
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+  .date-container {
+    margin-left: 10px; /* Adjust margin for smaller screens */
+  }
+
+  header {
+    height: auto; /* Adjust height for smaller screens */
+    flex-direction: column; /* Stack header items vertically for small screens */
+    align-items: center; /* Center items for small screens */
+  }
+
+  #product-name {
+    margin-bottom: 10px; /* Add spacing below product name for small screens */
+  }
+
+  .navbar {
+    display: flex;
+    padding-left: 0;
+  }
+
+  .navbar-links {
+    margin-top: 10px; /* Add spacing between navbar links for small screens */
+  }
+
+  .navbar-links a {
+    margin-right: 0; /* Remove right margin for small screens */
+  }
+
+  .date-container {
+    margin-left: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .chart-container {
+    grid-template-columns: 1fr; /* Single column for small screens */
+  }
+
+  .chart-item,
+  .chart-item1,
+  .chart-item2,
+  .chart-item3 {
+    width: 100%; /* Full width for small screens */
+  }
+
+  .map-container {
+    width: 100%; /* Full width for small screens */
+    height: 300px; /* Adjust height for smaller screens */
+    padding-top: 0; /* Remove extra padding for smaller screens */
+  }
+}
